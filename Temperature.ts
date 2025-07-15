@@ -8,7 +8,7 @@ class Temperature {
     }
     setCelsius(celsius: number): void {
         if (celsius < -273.15) {
-            throw new Error("Temperature cannot be below -273.15°C (absolute zero).");
+            throw new Error("Temperature Invalid");
         }
         this.celsius = celsius;
     }
