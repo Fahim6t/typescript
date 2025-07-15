@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Product_1 = require("./Product");
+var Cart_1 = require("./Cart");
+var cart = new Cart_1.Cart();
+var product1 = new Product_1.Product(101, 'Pen', 10);
+var product2 = new Product_1.Product(201, 'Ball', 15);
+cart.addProduct(product1);
+cart.addProduct(product2);
+console.log(cart.calculateTotal());
+console.log(cart.getProduct());

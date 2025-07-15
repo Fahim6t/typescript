@@ -1,6 +1,6 @@
 import {firstName,lastName, Student} from "./myData";
 
-import {add} from "./addition";
+import add from "./addition";
 
 console.log(firstName+" "+lastName);
 
